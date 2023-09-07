@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de ventas</title>
+    <link rel="shortcut icon" href="imag/icono.png" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <div id="padre" class="padre">
+      <div>
+        <h1 class="text">GESTIÓN DE VENTAS</h1>
+      </div>
+      <div class="producto">
+        <div id="div1">
+          <p class="nombres">Producto</p>
+          <select id="Producto">
+            <option value="">Producto</option>
+            <option value="Blusa">Blusa</option>
+            <option value="Camiseta">Camiseta</option>
+            <option value="Pantalon">Pantalon</option>
+            <option value="Chaqueta">Chaqueta</option>
+            <option value="Ropa interior">Ropa interior</option>
+            <option value="Calzado">Calzado</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+        <div id="div2">
+          <p class="nombres">Precio</p>
+          <input type="text" id="Precio" class="caja" />
+        </div>
+        <div id="div3">
+          <p class="nombres">Cantidad</p>
+          <input type="text" id="Cantidad" class="caja" />
+        </div>
+        <button type="button" name="button" id="button" onclick="agregar()">
+          Agregar producto +
+        </button>
+        
+      </div>
+
+      <div class="container">
+        <table id="info">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      <div id="total" class="total">
+          <p class="nombres">Total</p>
+          <input type="text" id="Total" class="caja" />
+          <button type="button" name="button" id="button" onclick="">
+          Guardar venta
+        </button>
+        <button type="button" name="button" id="button" onclick="">
+          Cancelar venta
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
